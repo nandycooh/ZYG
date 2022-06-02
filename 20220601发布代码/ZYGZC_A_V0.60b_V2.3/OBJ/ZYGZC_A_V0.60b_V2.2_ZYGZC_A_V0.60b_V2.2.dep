@@ -1,0 +1,955 @@
+Dependencies for Project 'ZYGZC_A_V0.60b_V2.2', Target 'ZYGZC_A_V0.60b_V2.2': (DO NOT MODIFY !)
+CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
+F (.\main.c)(0x6260D3DD)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\CORE -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\FUNCTION\DATA -I ..\FUNCTION\FLASH -I ..\FUNCTION\LED -I ..\FUNCTION\MD5 -I ..\FUNCTION\MOTOR -I ..\FUNCTION\POWER -I ..\FUNCTION\PROTOCOL -I ..\FUNCTION\SI4438 -I ..\FUNCTION\TIME -I ..\FUNCTION\USRC322 -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\FUNCTION\EMSERIAL -I ..\FUNCTION\SPI --c99-IC:\Users\VG2020\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\obj\main.o --omf_browse ..\obj\main.crf --depend ..\obj\main.d)
+I (..\SYSTEM\delay\delay.h)(0x604EB8DA)
+I (..\SYSTEM\sys\sys.h)(0x604F1402)
+I (..\USER\stm32f10x.h)(0x4D783CB5)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\USER\system_stm32f10x.h)(0x4D783CAB)
+I (..\USER\stm32f10x_conf.h)(0x5501900A)
+I (..\STM32F10x_FWLib\inc\stm32f10x_adc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_can.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_cec.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_crc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dac.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_flash.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_i2c.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_iwdg.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_sdio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x504F415F)
+I (..\STM32F10x_FWLib\inc\stm32f10x_wwdg.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (..\FUNCTION\SPI\drv_spi.h)(0x62417F59)
+I (..\FUNCTION\SI4438\drv_SI4438.h)(0x61A73FA4)
+I (..\FUNCTION\SI4438\radio_config_Si4438.h)(0x60A5F3D8)
+I (..\FUNCTION\SI4438\si446x_patch.h)(0x601A6E82)
+I (..\FreeRTOS\include\FreeRTOS.h)(0x60CAE259)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x60E55EBB)
+I (..\FreeRTOS\include\projdefs.h)(0x5FD90663)
+I (..\FreeRTOS\include\portable.h)(0x5FD90663)
+I (..\FreeRTOS\include\deprecated_definitions.h)(0x5FD90663)
+I (..\FreeRTOS\portable\RVDS\ARM_CM3\portmacro.h)(0x5FD90663)
+I (..\FreeRTOS\include\mpu_wrappers.h)(0x5FD90663)
+I (..\FreeRTOS\include\task.h)(0x5FD90663)
+I (..\FreeRTOS\include\list.h)(0x5FD90663)
+I (..\FUNCTION\POWER\power.h)(0x61A73B67)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E2EB2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5E8E2EB2)
+I (..\FUNCTION\FLASH\hal_flash.h)(0x61A73951)
+I (..\FUNCTION\LED\led.h)(0x61A739F3)
+I (..\FUNCTION\USRC322\usr_c322.h)(0x61EE128A)
+I (..\FUNCTION\PROTOCOL\protocol.h)(0x62986626)
+I (..\FUNCTION\MD5\md5.h)(0x5BFCF6F8)
+I (..\FUNCTION\MOTOR\motor.h)(0x61A73AD8)
+I (..\SYSTEM\usart\usart.h)(0x6115D9D9)
+I (..\FUNCTION\TIME\hal_timer.h)(0x61A737A2)
+I (..\FUNCTION\DATA\attitude.h)(0x6218A770)
+I (..\FUNCTION\EMSERIAL\emserial.h)(0x60FA7BA4)
+F (.\stm32f10x_it.c)(0x604981BE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\CORE -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\FUNCTION\DATA -I ..\FUNCTION\FLASH -I ..\FUNCTION\LED -I ..\FUNCTION\MD5 -I ..\FUNCTION\MOTOR -I ..\FUNCTION\POWER -I ..\FUNCTION\PROTOCOL -I ..\FUNCTION\SI4438 -I ..\FUNCTION\TIME -I ..\FUNCTION\USRC322 -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\FUNCTION\EMSERIAL -I ..\FUNCTION\SPI --c99-IC:\Users\VG2020\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\obj\stm32f10x_it.o --omf_browse ..\obj\stm32f10x_it.crf --depend ..\obj\stm32f10x_it.d)
+I (stm32f10x_it.h)(0x4D99A427)
+I (stm32f10x.h)(0x4D783CB5)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (system_stm32f10x.h)(0x4D783CAB)
+I (stm32f10x_conf.h)(0x5501900A)
+I (..\STM32F10x_FWLib\inc\stm32f10x_adc.h)(0x4D783BB4)
+I (..\USER\stm32f10x.h)(0x4D783CB5)
+I (..\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_can.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_cec.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_crc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dac.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_flash.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_i2c.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_iwdg.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_sdio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x504F415F)
+I (..\STM32F10x_FWLib\inc\stm32f10x_wwdg.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+F (.\system_stm32f10x.c)(0x4D99A427)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\CORE -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\FUNCTION\DATA -I ..\FUNCTION\FLASH -I ..\FUNCTION\LED -I ..\FUNCTION\MD5 -I ..\FUNCTION\MOTOR -I ..\FUNCTION\POWER -I ..\FUNCTION\PROTOCOL -I ..\FUNCTION\SI4438 -I ..\FUNCTION\TIME -I ..\FUNCTION\USRC322 -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\FUNCTION\EMSERIAL -I ..\FUNCTION\SPI --c99-IC:\Users\VG2020\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\obj\system_stm32f10x.o --omf_browse ..\obj\system_stm32f10x.crf --depend ..\obj\system_stm32f10x.d)
+I (stm32f10x.h)(0x4D783CB5)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (system_stm32f10x.h)(0x4D783CAB)
+I (stm32f10x_conf.h)(0x5501900A)
+I (..\STM32F10x_FWLib\inc\stm32f10x_adc.h)(0x4D783BB4)
+I (..\USER\stm32f10x.h)(0x4D783CB5)
+I (..\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_can.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_cec.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_crc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dac.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_flash.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_i2c.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_iwdg.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_sdio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x504F415F)
+I (..\STM32F10x_FWLib\inc\stm32f10x_wwdg.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+F (..\FUNCTION\FLASH\hal_flash.c)(0x60E7B2C0)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\CORE -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\FUNCTION\DATA -I ..\FUNCTION\FLASH -I ..\FUNCTION\LED -I ..\FUNCTION\MD5 -I ..\FUNCTION\MOTOR -I ..\FUNCTION\POWER -I ..\FUNCTION\PROTOCOL -I ..\FUNCTION\SI4438 -I ..\FUNCTION\TIME -I ..\FUNCTION\USRC322 -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\FUNCTION\EMSERIAL -I ..\FUNCTION\SPI --c99-IC:\Users\VG2020\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\obj\hal_flash.o --omf_browse ..\obj\hal_flash.crf --depend ..\obj\hal_flash.d)
+I (..\FUNCTION\FLASH\hal_flash.h)(0x61A73951)
+I (..\USER\stm32f10x.h)(0x4D783CB5)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\USER\system_stm32f10x.h)(0x4D783CAB)
+I (..\USER\stm32f10x_conf.h)(0x5501900A)
+I (..\STM32F10x_FWLib\inc\stm32f10x_adc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_can.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_cec.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_crc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dac.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_flash.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_i2c.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_iwdg.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_sdio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x504F415F)
+I (..\STM32F10x_FWLib\inc\stm32f10x_wwdg.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (..\SYSTEM\delay\delay.h)(0x604EB8DA)
+I (..\SYSTEM\sys\sys.h)(0x604F1402)
+F (..\FUNCTION\LED\led.c)(0x6131C8CE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\CORE -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\FUNCTION\DATA -I ..\FUNCTION\FLASH -I ..\FUNCTION\LED -I ..\FUNCTION\MD5 -I ..\FUNCTION\MOTOR -I ..\FUNCTION\POWER -I ..\FUNCTION\PROTOCOL -I ..\FUNCTION\SI4438 -I ..\FUNCTION\TIME -I ..\FUNCTION\USRC322 -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\FUNCTION\EMSERIAL -I ..\FUNCTION\SPI --c99-IC:\Users\VG2020\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\obj\led.o --omf_browse ..\obj\led.crf --depend ..\obj\led.d)
+I (..\FUNCTION\LED\led.h)(0x61A739F3)
+I (..\SYSTEM\sys\sys.h)(0x604F1402)
+I (..\USER\stm32f10x.h)(0x4D783CB5)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\USER\system_stm32f10x.h)(0x4D783CAB)
+I (..\USER\stm32f10x_conf.h)(0x5501900A)
+I (..\STM32F10x_FWLib\inc\stm32f10x_adc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_can.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_cec.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_crc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dac.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_flash.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_i2c.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_iwdg.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_sdio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x504F415F)
+I (..\STM32F10x_FWLib\inc\stm32f10x_wwdg.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E2EB2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5E8E2EB2)
+I (..\SYSTEM\delay\delay.h)(0x604EB8DA)
+F (..\FUNCTION\MD5\md5.c)(0x5BFCF6F8)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\CORE -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\FUNCTION\DATA -I ..\FUNCTION\FLASH -I ..\FUNCTION\LED -I ..\FUNCTION\MD5 -I ..\FUNCTION\MOTOR -I ..\FUNCTION\POWER -I ..\FUNCTION\PROTOCOL -I ..\FUNCTION\SI4438 -I ..\FUNCTION\TIME -I ..\FUNCTION\USRC322 -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\FUNCTION\EMSERIAL -I ..\FUNCTION\SPI --c99-IC:\Users\VG2020\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\obj\md5.o --omf_browse ..\obj\md5.crf --depend ..\obj\md5.d)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
+I (..\FUNCTION\MD5\md5.h)(0x5BFCF6F8)
+F (..\FUNCTION\MOTOR\motor.c)(0x60F4E380)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\CORE -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\FUNCTION\DATA -I ..\FUNCTION\FLASH -I ..\FUNCTION\LED -I ..\FUNCTION\MD5 -I ..\FUNCTION\MOTOR -I ..\FUNCTION\POWER -I ..\FUNCTION\PROTOCOL -I ..\FUNCTION\SI4438 -I ..\FUNCTION\TIME -I ..\FUNCTION\USRC322 -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\FUNCTION\EMSERIAL -I ..\FUNCTION\SPI --c99-IC:\Users\VG2020\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\obj\motor.o --omf_browse ..\obj\motor.crf --depend ..\obj\motor.d)
+I (..\SYSTEM\sys\sys.h)(0x604F1402)
+I (..\USER\stm32f10x.h)(0x4D783CB5)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\USER\system_stm32f10x.h)(0x4D783CAB)
+I (..\USER\stm32f10x_conf.h)(0x5501900A)
+I (..\STM32F10x_FWLib\inc\stm32f10x_adc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_can.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_cec.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_crc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dac.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_flash.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_i2c.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_iwdg.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_sdio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x504F415F)
+I (..\STM32F10x_FWLib\inc\stm32f10x_wwdg.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (..\FUNCTION\MOTOR\motor.h)(0x61A73AD8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
+F (..\FUNCTION\POWER\power.c)(0x61A07C7A)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\CORE -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\FUNCTION\DATA -I ..\FUNCTION\FLASH -I ..\FUNCTION\LED -I ..\FUNCTION\MD5 -I ..\FUNCTION\MOTOR -I ..\FUNCTION\POWER -I ..\FUNCTION\PROTOCOL -I ..\FUNCTION\SI4438 -I ..\FUNCTION\TIME -I ..\FUNCTION\USRC322 -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\FUNCTION\EMSERIAL -I ..\FUNCTION\SPI --c99-IC:\Users\VG2020\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\obj\power.o --omf_browse ..\obj\power.crf --depend ..\obj\power.d)
+I (..\FUNCTION\POWER\power.h)(0x61A73B67)
+I (..\SYSTEM\sys\sys.h)(0x604F1402)
+I (..\USER\stm32f10x.h)(0x4D783CB5)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\USER\system_stm32f10x.h)(0x4D783CAB)
+I (..\USER\stm32f10x_conf.h)(0x5501900A)
+I (..\STM32F10x_FWLib\inc\stm32f10x_adc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_can.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_cec.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_crc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dac.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_flash.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_i2c.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_iwdg.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_sdio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x504F415F)
+I (..\STM32F10x_FWLib\inc\stm32f10x_wwdg.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E2EB2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5E8E2EB2)
+I (..\SYSTEM\delay\delay.h)(0x604EB8DA)
+I (..\FUNCTION\FLASH\hal_flash.h)(0x61A73951)
+I (..\FUNCTION\LED\led.h)(0x61A739F3)
+F (..\FUNCTION\DATA\attitude.c)(0x62270E1B)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\CORE -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\FUNCTION\DATA -I ..\FUNCTION\FLASH -I ..\FUNCTION\LED -I ..\FUNCTION\MD5 -I ..\FUNCTION\MOTOR -I ..\FUNCTION\POWER -I ..\FUNCTION\PROTOCOL -I ..\FUNCTION\SI4438 -I ..\FUNCTION\TIME -I ..\FUNCTION\USRC322 -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\FUNCTION\EMSERIAL -I ..\FUNCTION\SPI --c99-IC:\Users\VG2020\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\obj\attitude.o --omf_browse ..\obj\attitude.crf --depend ..\obj\attitude.d)
+I (..\FUNCTION\DATA\attitude.h)(0x6218A770)
+I (..\SYSTEM\sys\sys.h)(0x604F1402)
+I (..\USER\stm32f10x.h)(0x4D783CB5)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\USER\system_stm32f10x.h)(0x4D783CAB)
+I (..\USER\stm32f10x_conf.h)(0x5501900A)
+I (..\STM32F10x_FWLib\inc\stm32f10x_adc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_can.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_cec.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_crc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dac.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_flash.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_i2c.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_iwdg.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_sdio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x504F415F)
+I (..\STM32F10x_FWLib\inc\stm32f10x_wwdg.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E2EB2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5E8E2EB2)
+I (..\FUNCTION\USRC322\usr_c322.h)(0x61EE128A)
+I (..\FUNCTION\POWER\power.h)(0x61A73B67)
+I (..\SYSTEM\delay\delay.h)(0x604EB8DA)
+I (..\FUNCTION\FLASH\hal_flash.h)(0x61A73951)
+I (..\FUNCTION\LED\led.h)(0x61A739F3)
+I (..\FUNCTION\PROTOCOL\protocol.h)(0x62986626)
+I (..\FUNCTION\SI4438\drv_SI4438.h)(0x61A73FA4)
+I (..\FUNCTION\SPI\drv_spi.h)(0x62417F59)
+I (..\FUNCTION\SI4438\radio_config_Si4438.h)(0x60A5F3D8)
+I (..\FUNCTION\SI4438\si446x_patch.h)(0x601A6E82)
+I (..\FUNCTION\MD5\md5.h)(0x5BFCF6F8)
+I (..\FUNCTION\MOTOR\motor.h)(0x61A73AD8)
+I (..\SYSTEM\usart\usart.h)(0x6115D9D9)
+F (..\FUNCTION\PROTOCOL\protocol.c)(0x6242A818)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\CORE -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\FUNCTION\DATA -I ..\FUNCTION\FLASH -I ..\FUNCTION\LED -I ..\FUNCTION\MD5 -I ..\FUNCTION\MOTOR -I ..\FUNCTION\POWER -I ..\FUNCTION\PROTOCOL -I ..\FUNCTION\SI4438 -I ..\FUNCTION\TIME -I ..\FUNCTION\USRC322 -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\FUNCTION\EMSERIAL -I ..\FUNCTION\SPI --c99-IC:\Users\VG2020\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\obj\protocol.o --omf_browse ..\obj\protocol.crf --depend ..\obj\protocol.d)
+I (..\FUNCTION\PROTOCOL\protocol.h)(0x62986626)
+I (..\USER\stm32f10x.h)(0x4D783CB5)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\USER\system_stm32f10x.h)(0x4D783CAB)
+I (..\USER\stm32f10x_conf.h)(0x5501900A)
+I (..\STM32F10x_FWLib\inc\stm32f10x_adc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_can.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_cec.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_crc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dac.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_flash.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_i2c.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_iwdg.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_sdio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x504F415F)
+I (..\STM32F10x_FWLib\inc\stm32f10x_wwdg.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (..\FUNCTION\SI4438\drv_SI4438.h)(0x61A73FA4)
+I (..\FUNCTION\SPI\drv_spi.h)(0x62417F59)
+I (..\SYSTEM\delay\delay.h)(0x604EB8DA)
+I (..\SYSTEM\sys\sys.h)(0x604F1402)
+I (..\FUNCTION\SI4438\radio_config_Si4438.h)(0x60A5F3D8)
+I (..\FUNCTION\SI4438\si446x_patch.h)(0x601A6E82)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
+I (..\FUNCTION\USRC322\usr_c322.h)(0x61EE128A)
+I (..\FUNCTION\POWER\power.h)(0x61A73B67)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E2EB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5E8E2EB2)
+I (..\FUNCTION\FLASH\hal_flash.h)(0x61A73951)
+I (..\FUNCTION\LED\led.h)(0x61A739F3)
+I (..\FUNCTION\MD5\md5.h)(0x5BFCF6F8)
+I (..\FUNCTION\MOTOR\motor.h)(0x61A73AD8)
+I (..\SYSTEM\usart\usart.h)(0x6115D9D9)
+I (..\FUNCTION\DATA\attitude.h)(0x6218A770)
+F (..\FUNCTION\USRC322\usr_c322.c)(0x6226CE06)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\CORE -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\FUNCTION\DATA -I ..\FUNCTION\FLASH -I ..\FUNCTION\LED -I ..\FUNCTION\MD5 -I ..\FUNCTION\MOTOR -I ..\FUNCTION\POWER -I ..\FUNCTION\PROTOCOL -I ..\FUNCTION\SI4438 -I ..\FUNCTION\TIME -I ..\FUNCTION\USRC322 -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\FUNCTION\EMSERIAL -I ..\FUNCTION\SPI --c99-IC:\Users\VG2020\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\obj\usr_c322.o --omf_browse ..\obj\usr_c322.crf --depend ..\obj\usr_c322.d)
+I (..\FUNCTION\USRC322\usr_c322.h)(0x61EE128A)
+I (..\USER\stm32f10x.h)(0x4D783CB5)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\USER\system_stm32f10x.h)(0x4D783CAB)
+I (..\USER\stm32f10x_conf.h)(0x5501900A)
+I (..\STM32F10x_FWLib\inc\stm32f10x_adc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_can.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_cec.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_crc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dac.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_flash.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_i2c.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_iwdg.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_sdio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x504F415F)
+I (..\STM32F10x_FWLib\inc\stm32f10x_wwdg.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (..\FUNCTION\POWER\power.h)(0x61A73B67)
+I (..\SYSTEM\sys\sys.h)(0x604F1402)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E2EB2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5E8E2EB2)
+I (..\SYSTEM\delay\delay.h)(0x604EB8DA)
+I (..\FUNCTION\FLASH\hal_flash.h)(0x61A73951)
+I (..\FUNCTION\LED\led.h)(0x61A739F3)
+I (..\FUNCTION\PROTOCOL\protocol.h)(0x62986626)
+I (..\FUNCTION\SI4438\drv_SI4438.h)(0x61A73FA4)
+I (..\FUNCTION\SPI\drv_spi.h)(0x62417F59)
+I (..\FUNCTION\SI4438\radio_config_Si4438.h)(0x60A5F3D8)
+I (..\FUNCTION\SI4438\si446x_patch.h)(0x601A6E82)
+I (..\FUNCTION\MD5\md5.h)(0x5BFCF6F8)
+I (..\FUNCTION\MOTOR\motor.h)(0x61A73AD8)
+I (..\SYSTEM\usart\usart.h)(0x6115D9D9)
+I (..\FUNCTION\DATA\attitude.h)(0x6218A770)
+I (..\FreeRTOS\include\FreeRTOS.h)(0x60CAE259)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x60E55EBB)
+I (..\FreeRTOS\include\projdefs.h)(0x5FD90663)
+I (..\FreeRTOS\include\portable.h)(0x5FD90663)
+I (..\FreeRTOS\include\deprecated_definitions.h)(0x5FD90663)
+I (..\FreeRTOS\portable\RVDS\ARM_CM3\portmacro.h)(0x5FD90663)
+I (..\FreeRTOS\include\mpu_wrappers.h)(0x5FD90663)
+I (..\FreeRTOS\include\task.h)(0x5FD90663)
+I (..\FreeRTOS\include\list.h)(0x5FD90663)
+F (..\FUNCTION\SI4438\drv_SI4438.c)(0x62417F59)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\CORE -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\FUNCTION\DATA -I ..\FUNCTION\FLASH -I ..\FUNCTION\LED -I ..\FUNCTION\MD5 -I ..\FUNCTION\MOTOR -I ..\FUNCTION\POWER -I ..\FUNCTION\PROTOCOL -I ..\FUNCTION\SI4438 -I ..\FUNCTION\TIME -I ..\FUNCTION\USRC322 -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\FUNCTION\EMSERIAL -I ..\FUNCTION\SPI --c99-IC:\Users\VG2020\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\obj\drv_si4438.o --omf_browse ..\obj\drv_si4438.crf --depend ..\obj\drv_si4438.d)
+I (..\FUNCTION\SI4438\drv_SI4438.h)(0x61A73FA4)
+I (..\FUNCTION\SPI\drv_spi.h)(0x62417F59)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\USER\stm32f10x.h)(0x4D783CB5)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\USER\system_stm32f10x.h)(0x4D783CAB)
+I (..\USER\stm32f10x_conf.h)(0x5501900A)
+I (..\STM32F10x_FWLib\inc\stm32f10x_adc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_can.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_cec.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_crc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dac.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_flash.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_i2c.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_iwdg.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_sdio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x504F415F)
+I (..\STM32F10x_FWLib\inc\stm32f10x_wwdg.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (..\SYSTEM\delay\delay.h)(0x604EB8DA)
+I (..\SYSTEM\sys\sys.h)(0x604F1402)
+I (..\FUNCTION\SI4438\radio_config_Si4438.h)(0x60A5F3D8)
+I (..\FUNCTION\SI4438\si446x_patch.h)(0x601A6E82)
+F (..\FUNCTION\SPI\drv_spi.c)(0x6030C125)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\CORE -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\FUNCTION\DATA -I ..\FUNCTION\FLASH -I ..\FUNCTION\LED -I ..\FUNCTION\MD5 -I ..\FUNCTION\MOTOR -I ..\FUNCTION\POWER -I ..\FUNCTION\PROTOCOL -I ..\FUNCTION\SI4438 -I ..\FUNCTION\TIME -I ..\FUNCTION\USRC322 -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\FUNCTION\EMSERIAL -I ..\FUNCTION\SPI --c99-IC:\Users\VG2020\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\obj\drv_spi.o --omf_browse ..\obj\drv_spi.crf --depend ..\obj\drv_spi.d)
+I (..\FUNCTION\SPI\drv_spi.h)(0x62417F59)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\USER\stm32f10x.h)(0x4D783CB5)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\USER\system_stm32f10x.h)(0x4D783CAB)
+I (..\USER\stm32f10x_conf.h)(0x5501900A)
+I (..\STM32F10x_FWLib\inc\stm32f10x_adc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_can.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_cec.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_crc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dac.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_flash.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_i2c.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_iwdg.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_sdio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x504F415F)
+I (..\STM32F10x_FWLib\inc\stm32f10x_wwdg.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+F (..\SYSTEM\delay\delay.c)(0x60497D10)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\CORE -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\FUNCTION\DATA -I ..\FUNCTION\FLASH -I ..\FUNCTION\LED -I ..\FUNCTION\MD5 -I ..\FUNCTION\MOTOR -I ..\FUNCTION\POWER -I ..\FUNCTION\PROTOCOL -I ..\FUNCTION\SI4438 -I ..\FUNCTION\TIME -I ..\FUNCTION\USRC322 -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\FUNCTION\EMSERIAL -I ..\FUNCTION\SPI --c99-IC:\Users\VG2020\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\obj\delay.o --omf_browse ..\obj\delay.crf --depend ..\obj\delay.d)
+I (..\SYSTEM\delay\delay.h)(0x604EB8DA)
+I (..\SYSTEM\sys\sys.h)(0x604F1402)
+I (..\USER\stm32f10x.h)(0x4D783CB5)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\USER\system_stm32f10x.h)(0x4D783CAB)
+I (..\USER\stm32f10x_conf.h)(0x5501900A)
+I (..\STM32F10x_FWLib\inc\stm32f10x_adc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_can.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_cec.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_crc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dac.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_flash.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_i2c.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_iwdg.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_sdio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x504F415F)
+I (..\STM32F10x_FWLib\inc\stm32f10x_wwdg.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (..\FreeRTOS\include\FreeRTOS.h)(0x60CAE259)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x60E55EBB)
+I (..\FreeRTOS\include\projdefs.h)(0x5FD90663)
+I (..\FreeRTOS\include\portable.h)(0x5FD90663)
+I (..\FreeRTOS\include\deprecated_definitions.h)(0x5FD90663)
+I (..\FreeRTOS\portable\RVDS\ARM_CM3\portmacro.h)(0x5FD90663)
+I (..\FreeRTOS\include\mpu_wrappers.h)(0x5FD90663)
+I (..\FreeRTOS\include\task.h)(0x5FD90663)
+I (..\FreeRTOS\include\list.h)(0x5FD90663)
+F (..\SYSTEM\sys\sys.c)(0x60472E3F)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\CORE -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\FUNCTION\DATA -I ..\FUNCTION\FLASH -I ..\FUNCTION\LED -I ..\FUNCTION\MD5 -I ..\FUNCTION\MOTOR -I ..\FUNCTION\POWER -I ..\FUNCTION\PROTOCOL -I ..\FUNCTION\SI4438 -I ..\FUNCTION\TIME -I ..\FUNCTION\USRC322 -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\FUNCTION\EMSERIAL -I ..\FUNCTION\SPI --c99-IC:\Users\VG2020\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\obj\sys.o --omf_browse ..\obj\sys.crf --depend ..\obj\sys.d)
+I (..\SYSTEM\sys\sys.h)(0x604F1402)
+I (..\USER\stm32f10x.h)(0x4D783CB5)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\USER\system_stm32f10x.h)(0x4D783CAB)
+I (..\USER\stm32f10x_conf.h)(0x5501900A)
+I (..\STM32F10x_FWLib\inc\stm32f10x_adc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_can.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_cec.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_crc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dac.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_flash.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_i2c.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_iwdg.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_sdio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x504F415F)
+I (..\STM32F10x_FWLib\inc\stm32f10x_wwdg.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+F (..\SYSTEM\usart\usart.c)(0x611CA514)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\CORE -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\FUNCTION\DATA -I ..\FUNCTION\FLASH -I ..\FUNCTION\LED -I ..\FUNCTION\MD5 -I ..\FUNCTION\MOTOR -I ..\FUNCTION\POWER -I ..\FUNCTION\PROTOCOL -I ..\FUNCTION\SI4438 -I ..\FUNCTION\TIME -I ..\FUNCTION\USRC322 -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\FUNCTION\EMSERIAL -I ..\FUNCTION\SPI --c99-IC:\Users\VG2020\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\obj\usart.o --omf_browse ..\obj\usart.crf --depend ..\obj\usart.d)
+I (..\SYSTEM\sys\sys.h)(0x604F1402)
+I (..\USER\stm32f10x.h)(0x4D783CB5)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\USER\system_stm32f10x.h)(0x4D783CAB)
+I (..\USER\stm32f10x_conf.h)(0x5501900A)
+I (..\STM32F10x_FWLib\inc\stm32f10x_adc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_can.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_cec.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_crc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dac.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_flash.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_i2c.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_iwdg.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_sdio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x504F415F)
+I (..\STM32F10x_FWLib\inc\stm32f10x_wwdg.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (..\SYSTEM\usart\usart.h)(0x6115D9D9)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
+I (..\FreeRTOS\include\FreeRTOS.h)(0x60CAE259)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x60E55EBB)
+I (..\FreeRTOS\include\projdefs.h)(0x5FD90663)
+I (..\FreeRTOS\include\portable.h)(0x5FD90663)
+I (..\FreeRTOS\include\deprecated_definitions.h)(0x5FD90663)
+I (..\FreeRTOS\portable\RVDS\ARM_CM3\portmacro.h)(0x5FD90663)
+I (..\FreeRTOS\include\mpu_wrappers.h)(0x5FD90663)
+F (..\CORE\core_cm3.c)(0x4C0C587E)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\CORE -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\FUNCTION\DATA -I ..\FUNCTION\FLASH -I ..\FUNCTION\LED -I ..\FUNCTION\MD5 -I ..\FUNCTION\MOTOR -I ..\FUNCTION\POWER -I ..\FUNCTION\PROTOCOL -I ..\FUNCTION\SI4438 -I ..\FUNCTION\TIME -I ..\FUNCTION\USRC322 -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\FUNCTION\EMSERIAL -I ..\FUNCTION\SPI --c99-IC:\Users\VG2020\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\obj\core_cm3.o --omf_browse ..\obj\core_cm3.crf --depend ..\obj\core_cm3.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+F (..\CORE\startup_stm32f10x_hd.s)(0x60498557)(--cpu Cortex-M3 -g --apcs=interwork -IC:\Users\VG2020\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 533" --pd "STM32F10X_MD SETA 1"--list .\listings\startup_stm32f10x_hd.lst --xref -o ..\obj\startup_stm32f10x_hd.o --depend ..\obj\startup_stm32f10x_hd.d)
+F (..\STM32F10x_FWLib\src\misc.c)(0x4D783BB4)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\CORE -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\FUNCTION\DATA -I ..\FUNCTION\FLASH -I ..\FUNCTION\LED -I ..\FUNCTION\MD5 -I ..\FUNCTION\MOTOR -I ..\FUNCTION\POWER -I ..\FUNCTION\PROTOCOL -I ..\FUNCTION\SI4438 -I ..\FUNCTION\TIME -I ..\FUNCTION\USRC322 -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\FUNCTION\EMSERIAL -I ..\FUNCTION\SPI --c99-IC:\Users\VG2020\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\obj\misc.o --omf_browse ..\obj\misc.crf --depend ..\obj\misc.d)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (..\USER\stm32f10x.h)(0x4D783CB5)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\USER\system_stm32f10x.h)(0x4D783CAB)
+I (..\USER\stm32f10x_conf.h)(0x5501900A)
+I (..\STM32F10x_FWLib\inc\stm32f10x_adc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_can.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_cec.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_crc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dac.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_flash.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_i2c.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_iwdg.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_sdio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x504F415F)
+I (..\STM32F10x_FWLib\inc\stm32f10x_wwdg.h)(0x4D783BB4)
+F (..\STM32F10x_FWLib\src\stm32f10x_gpio.c)(0x4D79EEC7)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\CORE -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\FUNCTION\DATA -I ..\FUNCTION\FLASH -I ..\FUNCTION\LED -I ..\FUNCTION\MD5 -I ..\FUNCTION\MOTOR -I ..\FUNCTION\POWER -I ..\FUNCTION\PROTOCOL -I ..\FUNCTION\SI4438 -I ..\FUNCTION\TIME -I ..\FUNCTION\USRC322 -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\FUNCTION\EMSERIAL -I ..\FUNCTION\SPI --c99-IC:\Users\VG2020\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\obj\stm32f10x_gpio.o --omf_browse ..\obj\stm32f10x_gpio.crf --depend ..\obj\stm32f10x_gpio.d)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\USER\stm32f10x.h)(0x4D783CB5)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\USER\system_stm32f10x.h)(0x4D783CAB)
+I (..\USER\stm32f10x_conf.h)(0x5501900A)
+I (..\STM32F10x_FWLib\inc\stm32f10x_adc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_can.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_cec.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_crc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dac.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_flash.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_i2c.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_iwdg.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_sdio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x504F415F)
+I (..\STM32F10x_FWLib\inc\stm32f10x_wwdg.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+F (..\STM32F10x_FWLib\src\stm32f10x_dbgmcu.c)(0x4D783BB4)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\CORE -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\FUNCTION\DATA -I ..\FUNCTION\FLASH -I ..\FUNCTION\LED -I ..\FUNCTION\MD5 -I ..\FUNCTION\MOTOR -I ..\FUNCTION\POWER -I ..\FUNCTION\PROTOCOL -I ..\FUNCTION\SI4438 -I ..\FUNCTION\TIME -I ..\FUNCTION\USRC322 -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\FUNCTION\EMSERIAL -I ..\FUNCTION\SPI --c99-IC:\Users\VG2020\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\obj\stm32f10x_dbgmcu.o --omf_browse ..\obj\stm32f10x_dbgmcu.crf --depend ..\obj\stm32f10x_dbgmcu.d)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x4D783BB4)
+I (..\USER\stm32f10x.h)(0x4D783CB5)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\USER\system_stm32f10x.h)(0x4D783CAB)
+I (..\USER\stm32f10x_conf.h)(0x5501900A)
+I (..\STM32F10x_FWLib\inc\stm32f10x_adc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_can.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_cec.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_crc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dac.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_flash.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_i2c.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_iwdg.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_sdio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x504F415F)
+I (..\STM32F10x_FWLib\inc\stm32f10x_wwdg.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+F (..\STM32F10x_FWLib\src\stm32f10x_rcc.c)(0x4D783BB4)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\CORE -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\FUNCTION\DATA -I ..\FUNCTION\FLASH -I ..\FUNCTION\LED -I ..\FUNCTION\MD5 -I ..\FUNCTION\MOTOR -I ..\FUNCTION\POWER -I ..\FUNCTION\PROTOCOL -I ..\FUNCTION\SI4438 -I ..\FUNCTION\TIME -I ..\FUNCTION\USRC322 -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\FUNCTION\EMSERIAL -I ..\FUNCTION\SPI --c99-IC:\Users\VG2020\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\obj\stm32f10x_rcc.o --omf_browse ..\obj\stm32f10x_rcc.crf --depend ..\obj\stm32f10x_rcc.d)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\USER\stm32f10x.h)(0x4D783CB5)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\USER\system_stm32f10x.h)(0x4D783CAB)
+I (..\USER\stm32f10x_conf.h)(0x5501900A)
+I (..\STM32F10x_FWLib\inc\stm32f10x_adc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_can.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_cec.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_crc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dac.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_flash.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_i2c.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_iwdg.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_sdio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x504F415F)
+I (..\STM32F10x_FWLib\inc\stm32f10x_wwdg.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+F (..\STM32F10x_FWLib\src\stm32f10x_usart.c)(0x4D783BB4)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\CORE -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\FUNCTION\DATA -I ..\FUNCTION\FLASH -I ..\FUNCTION\LED -I ..\FUNCTION\MD5 -I ..\FUNCTION\MOTOR -I ..\FUNCTION\POWER -I ..\FUNCTION\PROTOCOL -I ..\FUNCTION\SI4438 -I ..\FUNCTION\TIME -I ..\FUNCTION\USRC322 -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\FUNCTION\EMSERIAL -I ..\FUNCTION\SPI --c99-IC:\Users\VG2020\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\obj\stm32f10x_usart.o --omf_browse ..\obj\stm32f10x_usart.crf --depend ..\obj\stm32f10x_usart.d)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x504F415F)
+I (..\USER\stm32f10x.h)(0x4D783CB5)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\USER\system_stm32f10x.h)(0x4D783CAB)
+I (..\USER\stm32f10x_conf.h)(0x5501900A)
+I (..\STM32F10x_FWLib\inc\stm32f10x_adc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_can.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_cec.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_crc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dac.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_flash.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_i2c.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_iwdg.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_sdio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_wwdg.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+F (..\STM32F10x_FWLib\src\stm32f10x_spi.c)(0x4D783BB4)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\CORE -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\FUNCTION\DATA -I ..\FUNCTION\FLASH -I ..\FUNCTION\LED -I ..\FUNCTION\MD5 -I ..\FUNCTION\MOTOR -I ..\FUNCTION\POWER -I ..\FUNCTION\PROTOCOL -I ..\FUNCTION\SI4438 -I ..\FUNCTION\TIME -I ..\FUNCTION\USRC322 -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\FUNCTION\EMSERIAL -I ..\FUNCTION\SPI --c99-IC:\Users\VG2020\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\obj\stm32f10x_spi.o --omf_browse ..\obj\stm32f10x_spi.crf --depend ..\obj\stm32f10x_spi.d)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\USER\stm32f10x.h)(0x4D783CB5)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\USER\system_stm32f10x.h)(0x4D783CAB)
+I (..\USER\stm32f10x_conf.h)(0x5501900A)
+I (..\STM32F10x_FWLib\inc\stm32f10x_adc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_can.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_cec.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_crc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dac.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_flash.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_i2c.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_iwdg.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_sdio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x504F415F)
+I (..\STM32F10x_FWLib\inc\stm32f10x_wwdg.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+F (..\STM32F10x_FWLib\src\stm32f10x_tim.c)(0x4D783BB4)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\CORE -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\FUNCTION\DATA -I ..\FUNCTION\FLASH -I ..\FUNCTION\LED -I ..\FUNCTION\MD5 -I ..\FUNCTION\MOTOR -I ..\FUNCTION\POWER -I ..\FUNCTION\PROTOCOL -I ..\FUNCTION\SI4438 -I ..\FUNCTION\TIME -I ..\FUNCTION\USRC322 -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\FUNCTION\EMSERIAL -I ..\FUNCTION\SPI --c99-IC:\Users\VG2020\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\obj\stm32f10x_tim.o --omf_browse ..\obj\stm32f10x_tim.crf --depend ..\obj\stm32f10x_tim.d)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\USER\stm32f10x.h)(0x4D783CB5)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\USER\system_stm32f10x.h)(0x4D783CAB)
+I (..\USER\stm32f10x_conf.h)(0x5501900A)
+I (..\STM32F10x_FWLib\inc\stm32f10x_adc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_can.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_cec.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_crc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dac.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_flash.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_i2c.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_iwdg.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_sdio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x504F415F)
+I (..\STM32F10x_FWLib\inc\stm32f10x_wwdg.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+F (..\STM32F10x_FWLib\src\stm32f10x_flash.c)(0x4D783BB4)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\CORE -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\FUNCTION\DATA -I ..\FUNCTION\FLASH -I ..\FUNCTION\LED -I ..\FUNCTION\MD5 -I ..\FUNCTION\MOTOR -I ..\FUNCTION\POWER -I ..\FUNCTION\PROTOCOL -I ..\FUNCTION\SI4438 -I ..\FUNCTION\TIME -I ..\FUNCTION\USRC322 -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\FUNCTION\EMSERIAL -I ..\FUNCTION\SPI --c99-IC:\Users\VG2020\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\obj\stm32f10x_flash.o --omf_browse ..\obj\stm32f10x_flash.crf --depend ..\obj\stm32f10x_flash.d)
+I (..\STM32F10x_FWLib\inc\stm32f10x_flash.h)(0x4D783BB4)
+I (..\USER\stm32f10x.h)(0x4D783CB5)
+I (..\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\USER\system_stm32f10x.h)(0x4D783CAB)
+I (..\USER\stm32f10x_conf.h)(0x5501900A)
+I (..\STM32F10x_FWLib\inc\stm32f10x_adc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_bkp.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_can.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_cec.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_crc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dac.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dbgmcu.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_i2c.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_iwdg.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_pwr.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_rtc.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_sdio.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x504F415F)
+I (..\STM32F10x_FWLib\inc\stm32f10x_wwdg.h)(0x4D783BB4)
+I (..\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+F (..\FreeRTOS\list.c)(0x5FD90663)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\CORE -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\FUNCTION\DATA -I ..\FUNCTION\FLASH -I ..\FUNCTION\LED -I ..\FUNCTION\MD5 -I ..\FUNCTION\MOTOR -I ..\FUNCTION\POWER -I ..\FUNCTION\PROTOCOL -I ..\FUNCTION\SI4438 -I ..\FUNCTION\TIME -I ..\FUNCTION\USRC322 -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\FUNCTION\EMSERIAL -I ..\FUNCTION\SPI --c99-IC:\Users\VG2020\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\obj\list.o --omf_browse ..\obj\list.crf --depend ..\obj\list.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E2EB2)
+I (..\FreeRTOS\include\FreeRTOS.h)(0x60CAE259)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x60E55EBB)
+I (..\FreeRTOS\include\projdefs.h)(0x5FD90663)
+I (..\FreeRTOS\include\portable.h)(0x5FD90663)
+I (..\FreeRTOS\include\deprecated_definitions.h)(0x5FD90663)
+I (..\FreeRTOS\portable\RVDS\ARM_CM3\portmacro.h)(0x5FD90663)
+I (..\FreeRTOS\include\mpu_wrappers.h)(0x5FD90663)
+I (..\FreeRTOS\include\list.h)(0x5FD90663)
+F (..\FreeRTOS\tasks.c)(0x5FD90664)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\CORE -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\FUNCTION\DATA -I ..\FUNCTION\FLASH -I ..\FUNCTION\LED -I ..\FUNCTION\MD5 -I ..\FUNCTION\MOTOR -I ..\FUNCTION\POWER -I ..\FUNCTION\PROTOCOL -I ..\FUNCTION\SI4438 -I ..\FUNCTION\TIME -I ..\FUNCTION\USRC322 -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\FUNCTION\EMSERIAL -I ..\FUNCTION\SPI --c99-IC:\Users\VG2020\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\obj\tasks.o --omf_browse ..\obj\tasks.crf --depend ..\obj\tasks.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E2EB2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
+I (..\FreeRTOS\include\FreeRTOS.h)(0x60CAE259)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x60E55EBB)
+I (..\FreeRTOS\include\projdefs.h)(0x5FD90663)
+I (..\FreeRTOS\include\portable.h)(0x5FD90663)
+I (..\FreeRTOS\include\deprecated_definitions.h)(0x5FD90663)
+I (..\FreeRTOS\portable\RVDS\ARM_CM3\portmacro.h)(0x5FD90663)
+I (..\FreeRTOS\include\mpu_wrappers.h)(0x5FD90663)
+I (..\FreeRTOS\include\task.h)(0x5FD90663)
+I (..\FreeRTOS\include\list.h)(0x5FD90663)
+I (..\FreeRTOS\include\timers.h)(0x5FD90663)
+I (..\FreeRTOS\include\stack_macros.h)(0x5FD90663)
+F (..\FreeRTOS\timers.c)(0x5FD90664)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\CORE -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\FUNCTION\DATA -I ..\FUNCTION\FLASH -I ..\FUNCTION\LED -I ..\FUNCTION\MD5 -I ..\FUNCTION\MOTOR -I ..\FUNCTION\POWER -I ..\FUNCTION\PROTOCOL -I ..\FUNCTION\SI4438 -I ..\FUNCTION\TIME -I ..\FUNCTION\USRC322 -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\FUNCTION\EMSERIAL -I ..\FUNCTION\SPI --c99-IC:\Users\VG2020\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\obj\timers.o --omf_browse ..\obj\timers.crf --depend ..\obj\timers.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E2EB2)
+I (..\FreeRTOS\include\FreeRTOS.h)(0x60CAE259)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x60E55EBB)
+I (..\FreeRTOS\include\projdefs.h)(0x5FD90663)
+I (..\FreeRTOS\include\portable.h)(0x5FD90663)
+I (..\FreeRTOS\include\deprecated_definitions.h)(0x5FD90663)
+I (..\FreeRTOS\portable\RVDS\ARM_CM3\portmacro.h)(0x5FD90663)
+I (..\FreeRTOS\include\mpu_wrappers.h)(0x5FD90663)
+I (..\FreeRTOS\include\task.h)(0x5FD90663)
+I (..\FreeRTOS\include\list.h)(0x5FD90663)
+I (..\FreeRTOS\include\queue.h)(0x5FD90663)
+I (..\FreeRTOS\include\timers.h)(0x5FD90663)
+F (..\FreeRTOS\queue.c)(0x5FD90664)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\CORE -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\FUNCTION\DATA -I ..\FUNCTION\FLASH -I ..\FUNCTION\LED -I ..\FUNCTION\MD5 -I ..\FUNCTION\MOTOR -I ..\FUNCTION\POWER -I ..\FUNCTION\PROTOCOL -I ..\FUNCTION\SI4438 -I ..\FUNCTION\TIME -I ..\FUNCTION\USRC322 -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\FUNCTION\EMSERIAL -I ..\FUNCTION\SPI --c99-IC:\Users\VG2020\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\obj\queue.o --omf_browse ..\obj\queue.crf --depend ..\obj\queue.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E2EB2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
+I (..\FreeRTOS\include\FreeRTOS.h)(0x60CAE259)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x60E55EBB)
+I (..\FreeRTOS\include\projdefs.h)(0x5FD90663)
+I (..\FreeRTOS\include\portable.h)(0x5FD90663)
+I (..\FreeRTOS\include\deprecated_definitions.h)(0x5FD90663)
+I (..\FreeRTOS\portable\RVDS\ARM_CM3\portmacro.h)(0x5FD90663)
+I (..\FreeRTOS\include\mpu_wrappers.h)(0x5FD90663)
+I (..\FreeRTOS\include\task.h)(0x5FD90663)
+I (..\FreeRTOS\include\list.h)(0x5FD90663)
+I (..\FreeRTOS\include\queue.h)(0x5FD90663)
+F (..\FreeRTOS\croutine.c)(0x5FD90663)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\CORE -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\FUNCTION\DATA -I ..\FUNCTION\FLASH -I ..\FUNCTION\LED -I ..\FUNCTION\MD5 -I ..\FUNCTION\MOTOR -I ..\FUNCTION\POWER -I ..\FUNCTION\PROTOCOL -I ..\FUNCTION\SI4438 -I ..\FUNCTION\TIME -I ..\FUNCTION\USRC322 -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\FUNCTION\EMSERIAL -I ..\FUNCTION\SPI --c99-IC:\Users\VG2020\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\obj\croutine.o --omf_browse ..\obj\croutine.crf --depend ..\obj\croutine.d)
+I (..\FreeRTOS\include\FreeRTOS.h)(0x60CAE259)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x60E55EBB)
+I (..\FreeRTOS\include\projdefs.h)(0x5FD90663)
+I (..\FreeRTOS\include\portable.h)(0x5FD90663)
+I (..\FreeRTOS\include\deprecated_definitions.h)(0x5FD90663)
+I (..\FreeRTOS\portable\RVDS\ARM_CM3\portmacro.h)(0x5FD90663)
+I (..\FreeRTOS\include\mpu_wrappers.h)(0x5FD90663)
+I (..\FreeRTOS\include\task.h)(0x5FD90663)
+I (..\FreeRTOS\include\list.h)(0x5FD90663)
+I (..\FreeRTOS\include\croutine.h)(0x5FD90663)
+F (..\FreeRTOS\stream_buffer.c)(0x5FD90664)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\CORE -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\FUNCTION\DATA -I ..\FUNCTION\FLASH -I ..\FUNCTION\LED -I ..\FUNCTION\MD5 -I ..\FUNCTION\MOTOR -I ..\FUNCTION\POWER -I ..\FUNCTION\PROTOCOL -I ..\FUNCTION\SI4438 -I ..\FUNCTION\TIME -I ..\FUNCTION\USRC322 -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\FUNCTION\EMSERIAL -I ..\FUNCTION\SPI --c99-IC:\Users\VG2020\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\obj\stream_buffer.o --omf_browse ..\obj\stream_buffer.crf --depend ..\obj\stream_buffer.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
+I (..\FreeRTOS\include\FreeRTOS.h)(0x60CAE259)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x60E55EBB)
+I (..\FreeRTOS\include\projdefs.h)(0x5FD90663)
+I (..\FreeRTOS\include\portable.h)(0x5FD90663)
+I (..\FreeRTOS\include\deprecated_definitions.h)(0x5FD90663)
+I (..\FreeRTOS\portable\RVDS\ARM_CM3\portmacro.h)(0x5FD90663)
+I (..\FreeRTOS\include\mpu_wrappers.h)(0x5FD90663)
+I (..\FreeRTOS\include\task.h)(0x5FD90663)
+I (..\FreeRTOS\include\list.h)(0x5FD90663)
+I (..\FreeRTOS\include\stream_buffer.h)(0x5FD90663)
+F (..\FreeRTOS\event_groups.c)(0x5FD90663)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\CORE -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\FUNCTION\DATA -I ..\FUNCTION\FLASH -I ..\FUNCTION\LED -I ..\FUNCTION\MD5 -I ..\FUNCTION\MOTOR -I ..\FUNCTION\POWER -I ..\FUNCTION\PROTOCOL -I ..\FUNCTION\SI4438 -I ..\FUNCTION\TIME -I ..\FUNCTION\USRC322 -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\FUNCTION\EMSERIAL -I ..\FUNCTION\SPI --c99-IC:\Users\VG2020\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\obj\event_groups.o --omf_browse ..\obj\event_groups.crf --depend ..\obj\event_groups.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E2EB2)
+I (..\FreeRTOS\include\FreeRTOS.h)(0x60CAE259)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x60E55EBB)
+I (..\FreeRTOS\include\projdefs.h)(0x5FD90663)
+I (..\FreeRTOS\include\portable.h)(0x5FD90663)
+I (..\FreeRTOS\include\deprecated_definitions.h)(0x5FD90663)
+I (..\FreeRTOS\portable\RVDS\ARM_CM3\portmacro.h)(0x5FD90663)
+I (..\FreeRTOS\include\mpu_wrappers.h)(0x5FD90663)
+I (..\FreeRTOS\include\task.h)(0x5FD90663)
+I (..\FreeRTOS\include\list.h)(0x5FD90663)
+I (..\FreeRTOS\include\timers.h)(0x5FD90663)
+I (..\FreeRTOS\include\event_groups.h)(0x5FD90663)
+F (..\FreeRTOS\portable\RVDS\ARM_CM3\port.c)(0x604992B2)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\CORE -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\FUNCTION\DATA -I ..\FUNCTION\FLASH -I ..\FUNCTION\LED -I ..\FUNCTION\MD5 -I ..\FUNCTION\MOTOR -I ..\FUNCTION\POWER -I ..\FUNCTION\PROTOCOL -I ..\FUNCTION\SI4438 -I ..\FUNCTION\TIME -I ..\FUNCTION\USRC322 -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\FUNCTION\EMSERIAL -I ..\FUNCTION\SPI --c99-IC:\Users\VG2020\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\obj\port.o --omf_browse ..\obj\port.crf --depend ..\obj\port.d)
+I (..\FreeRTOS\include\FreeRTOS.h)(0x60CAE259)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x60E55EBB)
+I (..\FreeRTOS\include\projdefs.h)(0x5FD90663)
+I (..\FreeRTOS\include\portable.h)(0x5FD90663)
+I (..\FreeRTOS\include\deprecated_definitions.h)(0x5FD90663)
+I (..\FreeRTOS\portable\RVDS\ARM_CM3\portmacro.h)(0x5FD90663)
+I (..\FreeRTOS\include\mpu_wrappers.h)(0x5FD90663)
+I (..\FreeRTOS\include\task.h)(0x5FD90663)
+I (..\FreeRTOS\include\list.h)(0x5FD90663)
+F (..\FreeRTOS\portable\MemMang\heap_4.c)(0x5FD90663)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\CORE -I ..\STM32F10x_FWLib\inc -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\FUNCTION\DATA -I ..\FUNCTION\FLASH -I ..\FUNCTION\LED -I ..\FUNCTION\MD5 -I ..\FUNCTION\MOTOR -I ..\FUNCTION\POWER -I ..\FUNCTION\PROTOCOL -I ..\FUNCTION\SI4438 -I ..\FUNCTION\TIME -I ..\FUNCTION\USRC322 -I ..\FreeRTOS\include -I ..\FreeRTOS\portable\RVDS\ARM_CM3 -I ..\FUNCTION\EMSERIAL -I ..\FUNCTION\SPI --c99-IC:\Users\VG2020\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD-o ..\obj\heap_4.o --omf_browse ..\obj\heap_4.crf --depend ..\obj\heap_4.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E2EB2)
+I (..\FreeRTOS\include\FreeRTOS.h)(0x60CAE259)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E2EB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x60E55EBB)
+I (..\FreeRTOS\include\projdefs.h)(0x5FD90663)
+I (..\FreeRTOS\include\portable.h)(0x5FD90663)
+I (..\FreeRTOS\include\deprecated_definitions.h)(0x5FD90663)
+I (..\FreeRTOS\portable\RVDS\ARM_CM3\portmacro.h)(0x5FD90663)
+I (..\FreeRTOS\include\mpu_wrappers.h)(0x5FD90663)
+I (..\FreeRTOS\include\task.h)(0x5FD90663)
+I (..\FreeRTOS\include\list.h)(0x5FD90663)
+F (..\README.TXT)(0x62345083)()

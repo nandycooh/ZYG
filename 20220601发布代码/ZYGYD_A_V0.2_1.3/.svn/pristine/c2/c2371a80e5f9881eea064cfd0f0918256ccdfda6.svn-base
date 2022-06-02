@@ -1,0 +1,63 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+BigArmBUf	.\USART2.c	/^u8 BigArmBUf[FRAME_LEN];$/;"	v
+DEBUG_USART_APBxClkCmd	.\bsp_usart.h	17;"	d
+DEBUG_USART_BAUDRATE	.\bsp_usart.h	18;"	d
+DEBUG_USART_CLK	.\bsp_usart.h	16;"	d
+DEBUG_USART_GPIO_APBxClkCmd	.\bsp_usart.h	22;"	d
+DEBUG_USART_GPIO_CLK	.\bsp_usart.h	21;"	d
+DEBUG_USART_IRQ	.\bsp_usart.h	29;"	d
+DEBUG_USART_IRQHandler	.\bsp_usart.h	30;"	d
+DEBUG_USART_RX_GPIO_PIN	.\bsp_usart.h	27;"	d
+DEBUG_USART_RX_GPIO_PORT	.\bsp_usart.h	26;"	d
+DEBUG_USART_TX_GPIO_PIN	.\bsp_usart.h	25;"	d
+DEBUG_USART_TX_GPIO_PORT	.\bsp_usart.h	24;"	d
+DEBUG_USARTx	.\bsp_usart.h	15;"	d
+FRAME_HEAD1	.\USART2.h	10;"	d
+FRAME_HEAD2	.\USART2.h	11;"	d
+FRAME_LEN	.\USART2.h	6;"	d
+FRAME_TAIL	.\USART2.h	12;"	d
+Initial_UART2	.\USART2.c	/^void Initial_UART2(u32 baudrate)$/;"	f
+NVIC_UART2_Config	.\USART2.c	/^void NVIC_UART2_Config(void)$/;"	f
+TxBuffer2	.\USART2.c	/^u8 TxBuffer2[258];$/;"	v
+TxCounter2	.\USART2.c	/^u8 TxCounter2 = 0;$/;"	v
+UART2_Put_Char	.\USART2.c	/^void UART2_Put_Char(unsigned char DataToSend)$/;"	f
+USART2_FIFO_LEN	.\USART2.c	6;"	d	file:
+USART2_IRQHandler	.\USART2.c	/^void USART2_IRQHandler(void)$/;"	f
+USART_Config	.\bsp_usart.c	/^void USART_Config(void)$/;"	f
+_FIFO_H	.\fifo.h	15;"	d
+__USART2_H__	.\USART2.h	2;"	d
+__USART_H	.\bsp_usart.h	2;"	d
+buf123	.\USART2.c	/^u8 buf123[USART2_FIFO_LEN];$/;"	v
+complement	.\USART2.c	7;"	d	file:
+copy_len	.\USART2.c	/^static unsigned char copy_len = FRAME_LEN;$/;"	v	file:
+count2	.\USART2.c	/^u8 count2 = 0; $/;"	v
+data	.\fifo.h	/^	unsigned char *data;$/;"	m	struct:fifo
+fgetc	.\bsp_usart.c	/^int fgetc(FILE *f)$/;"	f
+fifo	.\fifo.h	/^struct fifo {$/;"	s
+fifo1	.\USART2.c	/^struct fifo fifo1;$/;"	v	typeref:struct:fifo
+fifo_alloc	.\fifo.c	/^signed int fifo_alloc(struct fifo *fifo, unsigned int size)$/;"	f
+fifo_copy_in	.\fifo.c	/^static void fifo_copy_in(struct fifo *fifo, unsigned char *src, unsigned int len, unsigned int off)$/;"	f	file:
+fifo_copy_out	.\fifo.c	/^static void fifo_copy_out(struct fifo *fifo, unsigned char *dst, unsigned int len, unsigned int off)$/;"	f	file:
+fifo_free	.\fifo.c	/^void fifo_free(struct fifo *fifo)$/;"	f
+fifo_in	.\fifo.c	/^unsigned int fifo_in(struct fifo *fifo, unsigned char *buf, unsigned int len)$/;"	f
+fifo_init	.\fifo.c	/^int fifo_init(struct fifo *fifo, unsigned char *buffer, unsigned int size)$/;"	f
+fifo_out	.\fifo.c	/^unsigned int fifo_out(struct fifo *fifo, unsigned char *buf, unsigned int len)$/;"	f
+fifo_out_peek	.\fifo.c	/^unsigned int fifo_out_peek(struct fifo *fifo, unsigned char *buf, unsigned int len)$/;"	f
+fifo_unused	.\fifo.c	/^static __inline unsigned int fifo_unused(struct fifo *fifo)$/;"	f	file:
+fifo_used	.\fifo.c	/^unsigned int fifo_used(struct fifo *fifo)$/;"	f
+fputc	.\bsp_usart.c	/^int fputc(int ch, FILE *f)$/;"	f
+in	.\fifo.h	/^	unsigned int	in;$/;"	m	struct:fifo
+init_usart2_fifo	.\USART2.c	/^void init_usart2_fifo(void)$/;"	f
+is_power_of_2	.\fifo.h	29;"	d
+mask	.\fifo.h	/^	unsigned int	mask;$/;"	m	struct:fifo
+min	.\fifo.h	26;"	d
+out	.\fifo.h	/^	unsigned int	out;$/;"	m	struct:fifo
+sum_check	.\USART2.c	/^static u8 sum_check(u8 *buf)$/;"	f	file:
+usart2SendBytes	.\USART2.c	/^void usart2SendBytes(u8 *buf, u8 len)$/;"	f
+usart2_data_handler	.\USART2.c	/^void usart2_data_handler(void)$/;"	f
+usart2_send_data	.\USART2.c	/^void usart2_send_data(u8 *sdata, u8 len) $/;"	f

@@ -1,0 +1,17 @@
+.\objects\results_holder.o: ..\User\MPU6050\mllite\results_holder.c
+.\objects\results_holder.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\results_holder.o: ..\User\MPU6050\mllite\results_holder.h
+.\objects\results_holder.o: ..\User\MPU6050\driver\include\mltypes.h
+.\objects\results_holder.o: ..\User\MPU6050\driver\include\stdint_invensense.h
+.\objects\results_holder.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\results_holder.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\errno.h
+.\objects\results_holder.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
+.\objects\results_holder.o: ..\User\MPU6050\mllite\ml_math_func.h
+.\objects\results_holder.o: ..\User\MPU6050\driver\include\mlmath.h
+.\objects\results_holder.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\results_holder.o: ..\User\MPU6050\mllite\start_manager.h
+.\objects\results_holder.o: ..\User\MPU6050\mllite\data_builder.h
+.\objects\results_holder.o: ..\User\MPU6050\mllite\message_layer.h
+.\objects\results_holder.o: ..\User\MPU6050\driver\include\log.h
+.\objects\results_holder.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\results_holder.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h

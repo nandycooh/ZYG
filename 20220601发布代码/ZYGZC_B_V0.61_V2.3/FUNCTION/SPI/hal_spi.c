@@ -1,0 +1,268 @@
+#include "../function/spi/hal_spi.h"
+
+/************************************************************  
+FileName: hal_spi.c   
+Author: hf             
+Date: 2021.03.23
+Description: 硬件/软件SPI初始化及读写字节      
+Version: V 1.0  
+Other:
+***********************************************************/ 
+
+#ifndef HARD_SOFT_SPI_CHOISE//如果没有定义HARD_SOFT_SPI_CHOISE，则使用硬件SPI
+
+/** 硬件SPI */
+
+/********************************************************************************************************   	
+函数名称：	DRV_SPI_Init
+函数功能：	SPI初始化(硬件)
+入口参数：	无
+返回参数：	无
+说明：	    无
+********************************************************************************************************/ 
+void drv_spi_init( void )
+{
+	GPIO_InitTypeDef	SpiGpioInitStructer;
+	SPI_InitTypeDef		SpiInitStructer;
+	
+	/** SPI引脚配置 */
+	RCC_APB2PeriphClockCmd(SPI_CLK_GPIO_CLK | SPI_MISO_GPIO_CLK | SPI_MOSI_GPIO_CLK | SPI_NSS_GPIO_CLK, ENABLE );	//打开端口时钟
+	
+	RCC_APB2PeriphClockCmd(RCC_APB2Periph_AFIO, ENABLE );//20210208 谨记
+	GPIO_PinRemapConfig(GPIO_Remap_SWJ_JTAGDisable , ENABLE);//释放JTAG引脚  使用这个将PB3/4 与PA15设为普通I/O JTAG-DP被禁用，SW-DP被启用
+  GPIO_PinRemapConfig(GPIO_Remap_SPI1 , ENABLE);//SPI1备用函数映射 必须要有
+	
+	//SCK MOSI MISO 配置为复用
+	SpiGpioInitStructer.GPIO_Speed = GPIO_Speed_10MHz;
+	SpiGpioInitStructer.GPIO_Mode = GPIO_Mode_AF_PP;
+	
+	SpiGpioInitStructer.GPIO_Pin = SPI_CLK_GPIO_PIN;
+	GPIO_Init( SPI_CLK_GPIO_PORT, &SpiGpioInitStructer );		//初始化SCK
+	
+	SpiGpioInitStructer.GPIO_Pin = SPI_MOSI_GPIO_PIN;
+	GPIO_Init( SPI_MOSI_GPIO_PORT, &SpiGpioInitStructer );		//初始化MOSI
+	GPIO_SetBits( SPI_MOSI_GPIO_PORT, SPI_MOSI_GPIO_PIN );
+
+	SpiGpioInitStructer.GPIO_Pin = SPI_MISO_GPIO_PIN;
+	GPIO_Init( SPI_MISO_GPIO_PORT, &SpiGpioInitStructer );		//初始化MISO
+	GPIO_SetBits( SPI_MISO_GPIO_PORT, SPI_MISO_GPIO_PIN );
+	
+	//NSS配置为推挽输出
+	SpiGpioInitStructer.GPIO_Mode = GPIO_Mode_Out_PP;
+	SpiGpioInitStructer.GPIO_Pin = SPI_NSS_GPIO_PIN;
+	GPIO_Init( SPI_NSS_GPIO_PORT, &SpiGpioInitStructer );		//初始化NSS
+	GPIO_SetBits( SPI_NSS_GPIO_PORT, SPI_NSS_GPIO_PIN );		//置高
+
+	/** SPI配置 */
+	SPI_I2S_DeInit( SPI_PORT );			//复位SPI
+	
+	if( SPI1 == SPI_PORT )				
+	{
+		RCC_APB2PeriphClockCmd( SPI_PORT_CLK, ENABLE );			//SPI1在APB2上，打开相应SPI时钟
+	}
+	else
+	{
+		RCC_APB1PeriphClockCmd( SPI_PORT_CLK, ENABLE );			//SPI2 3在APB1上
+	}
+	
+	SPI_Cmd( SPI_PORT, DISABLE );		//关闭SPI外设，配置前关闭
+	
+	SpiInitStructer.SPI_Direction = SPI_Direction_2Lines_FullDuplex;	//双线全双工
+	SpiInitStructer.SPI_Mode = SPI_Mode_Master;							//主机模式
+	SpiInitStructer.SPI_CPOL = SPI_CPOL_Low;							//空闲状态为低电平 
+	SpiInitStructer.SPI_CPHA = SPI_CPHA_1Edge;							//第一个边沿采集数据
+	SpiInitStructer.SPI_DataSize = SPI_DataSize_8b;						//8位数据
+	SpiInitStructer.SPI_NSS = SPI_NSS_Soft;								//从机软件管理
+	SpiInitStructer.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_64;	//64分频
+	SpiInitStructer.SPI_FirstBit = SPI_FirstBit_MSB;					//最高位先发送
+	SpiInitStructer.SPI_CRCPolynomial = 7;								//CRC多项式,默认不使用SPI自带CRC	 
+	
+	SPI_Init( SPI_PORT, &SpiInitStructer );
+	SPI_Cmd( SPI_PORT, ENABLE );
+}
+
+
+/*********************************************************************************************************   	
+函数名称：	DRV_SPI_Read_Write_Byte
+函数功能：	SPI收发一个字节
+入口参数：	TxByte: 发送的数据字节
+返回参数：	接收到的字节
+说明：	    非堵塞式，一旦等待超时，函数会自动退出
+********************************************************************************************************/ 
+uint8_t drv_spi_read_write_byte( uint8_t TxByte )
+{
+	uint8_t l_Data = 0;
+	uint16_t l_WaitTime = 0;
+	
+	while( RESET == SPI_I2S_GetFlagStatus( SPI_PORT, SPI_I2S_FLAG_TXE ) )		//等待发送缓冲区为空
+	{
+		if( SPI_WAIT_TIMEOUT == ++l_WaitTime )
+		{
+			break;			//如果等待超时则退出
+		}
+	}
+	l_WaitTime = SPI_WAIT_TIMEOUT / 2;		//重新设置接收等待时间(因为SPI的速度很快，正常情况下在发送完成之后会立即收到数据，等待时间不需要过长)
+	SPI_PORT->DR = TxByte;	//发送数据
+	
+	while( RESET == SPI_I2S_GetFlagStatus( SPI_PORT, SPI_I2S_FLAG_RXNE ) )		//等待接收缓冲区非空
+	{
+		if( SPI_WAIT_TIMEOUT == ++l_WaitTime )
+		{
+			break;			//如果等待超时则退出
+		}
+	}
+	
+	l_Data = (uint8_t)SPI_PORT->DR;		//读取接收数据
+	
+	return l_Data;		//返回
+}
+
+/*********************************************************************************************************   	
+函数名称：	DRV_SPI_Read_Write_String
+函数功能：	SPI收发字符串
+入口参数：	ReadBuffer: 接收数据缓冲区地址
+            WriteBuffer:发送字节缓冲区地址
+            Length:字节长度
+返回参数：	无
+说明：	    非堵塞式，一旦等待超时，函数会自动退出
+********************************************************************************************************/ 
+void drv_spi_read_write_string( uint8_t* ReadBuffer, uint8_t* WriteBuffer, uint16_t Length )
+{
+	GPIO_ResetBits( SPI_NSS_GPIO_PORT, SPI_NSS_GPIO_PIN);			//拉低片选
+	while( Length-- )
+	{
+		*ReadBuffer = drv_spi_read_write_byte( *WriteBuffer );		//收发数据
+		ReadBuffer++;
+		WriteBuffer++;				//读写地址加1
+	}
+	GPIO_SetBits( SPI_NSS_GPIO_PORT, SPI_NSS_GPIO_PIN);				//拉高片选
+}
+
+//#endif
+
+//#ifdef HARD_SOFT_SPI_CHOISE//如果定义了HARD_SOFT_SPI_CHOISE，则使用软模拟SPI
+
+#else
+
+/** 软件SPI */
+
+
+/****************************************************************************   	
+函数名称：	DRV_SPI_Init
+函数功能：	SPI初始化(软件)
+入口参数：	无
+返回参数：	无
+说明：	    无
+***************************************************************************/ 
+void drv_spi_init( void )
+{
+	GPIO_InitTypeDef	SpiGpioInitStructer;
+	
+	/** SPI引脚配置 */
+	RCC_APB2PeriphClockCmd( SPI_CLK_GPIO_CLK | SPI_MISO_GPIO_CLK | SPI_MOSI_GPIO_CLK | SPI_NSS_GPIO_CLK | RCC_APB2Periph_AFIO, ENABLE );	//打开端口时钟
+	
+	GPIO_PinRemapConfig(GPIO_Remap_SWJ_JTAGDisable , ENABLE);//释放JTAG引脚  使用这个将PB3/4 与PA15设为普通I/O
+  GPIO_PinRemapConfig(GPIO_Remap_SPI1 , ENABLE);//释放JTAG引脚
+	
+	//SCK MOSI NSS配置为推挽输出
+	SpiGpioInitStructer.GPIO_Speed = GPIO_Speed_10MHz;
+	SpiGpioInitStructer.GPIO_Mode = GPIO_Mode_Out_PP;
+	
+	SpiGpioInitStructer.GPIO_Pin = SPI_CLK_GPIO_PIN;
+	GPIO_Init( SPI_CLK_GPIO_PORT, &SpiGpioInitStructer );		//初始化SCK
+	GPIO_ResetBits( SPI_CLK_GPIO_PORT, SPI_CLK_GPIO_PIN);		//初始化状态设置为低
+	
+	SpiGpioInitStructer.GPIO_Pin = SPI_MOSI_GPIO_PIN;
+	GPIO_Init( SPI_MOSI_GPIO_PORT, &SpiGpioInitStructer );	//初始化MOSI
+	GPIO_SetBits( SPI_MOSI_GPIO_PORT, SPI_MOSI_GPIO_PIN);		//初始化状态设置为高
+	
+	SpiGpioInitStructer.GPIO_Pin = SPI_NSS_GPIO_PIN;
+	GPIO_Init( SPI_NSS_GPIO_PORT, &SpiGpioInitStructer );		//初始化NSS
+	GPIO_SetBits( SPI_NSS_GPIO_PORT, SPI_NSS_GPIO_PIN);			//初始化状态设置为高
+	
+	//初始化MISO 上拉输入
+	SpiGpioInitStructer.GPIO_Mode = GPIO_Mode_IPU;
+	SpiGpioInitStructer.GPIO_Pin = SPI_MISO_GPIO_PIN;
+	GPIO_Init( SPI_MISO_GPIO_PORT, &SpiGpioInitStructer );		
+	GPIO_SetBits( SPI_MISO_GPIO_PORT, SPI_MISO_GPIO_PIN);		//初始化状态设置为高
+}
+
+/****************************************************************************   	
+函数名称：	DRV_SPI_Read_Write_Byte
+函数功能：	SPI收发一个字节
+入口参数：	TxByte: 发送的数据字节
+返回参数：	接收到的字节
+说明：	    非堵塞式，一旦等待超时，函数会自动退出
+***************************************************************************/ 
+uint8_t drv_spi_read_write_byte( uint8_t TxByte )
+{
+	uint8_t i = 0, Data = 0;
+	
+	SPI_SET_CLK_LOW( );
+	
+	for( i = 0; i < 8; i++ )			//一个字节8byte需要循环8次
+	{
+		/** 发送 */
+		if( 0x80 == ( TxByte & 0x80 ))
+		{
+			SPI_SET_MOSI_HIGH( );		//如果即将要发送的位为 1 则置高IO引脚
+		}
+		else
+		{
+			SPI_SET_MOSI_LOW( );		//如果即将要发送的位为 0 则置低IO引脚
+		}
+		TxByte <<= 1;					//数据左移一位，先发送的是最高位
+		
+		SPI_SET_CLK_HIGH( );			//时钟线置高
+		__nop( );
+		__nop( );
+		
+		/** 接收 */
+		Data <<= 1;						//接收数据左移一位，先接收到的是最高位
+		if( 1 == SPI_GET_MISO( ))
+		{
+			Data |= 0x01;				//如果接收时IO引脚为高则认为接收到 1
+		}
+		
+		SPI_SET_CLK_LOW( );				//时钟线置低
+		__nop( );
+		__nop( );
+	}
+	
+	return Data;		//返回接收到的字节
+}
+
+/****************************************************************************   	
+函数名称：	DRV_SPI_Read_Write_String
+函数功能：	SPI收发字符串
+入口参数：	ReadBuffer: 接收数据缓冲区地址
+            WriteBuffer:发送字节缓冲区地址
+            Length:字节长度
+返回参数：	无
+说明：	    非堵塞式，一旦等待超时，函数会自动退出
+***************************************************************************/ 
+void drv_spi_read_write_string( uint8_t* ReadBuffer, uint8_t* WriteBuffer, uint16_t Length )
+{
+	SPI_SET_NSS_LOW( );			//片选拉低
+	
+	while( Length-- )
+	{
+		*ReadBuffer = drv_spi_read_write_byte( *WriteBuffer );		//收发数据
+		ReadBuffer++;
+		WriteBuffer++;			//读写地址加1
+	}
+	
+	SPI_SET_NSS_HIGH( );		//片选拉高
+}
+
+
+/** 以上是软件SPI */
+#endif
+
+
+SPI_ControlDef  SPI_ControlStruct={
+	.SI4438_Spi_Init=drv_spi_init,
+	.SI4438_Spi_Read_Write_Byte=drv_spi_read_write_byte,
+	.SI4438_Spi_Read_Write_String=drv_spi_read_write_string,
+};
+
